@@ -1,0 +1,132 @@
+/* Base styles for all screen sizes */
+p{
+    margin: 0;
+    padding: 0;
+}
+.action-button-media{
+    background-color: #4fce5d;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 10px !important;
+   }
+.action-button-text-media{
+    font-size : 15px;
+    font-weight:600;
+    color:#435a64;
+}
+.card-box{
+    width: 50%; 
+}
+.cardStyle{
+    border-radius: 7px;
+    background-color: #065e55;
+    -webkit-box-shadow: 1px 1px 5px 0.5px rgba(70, 76, 82, 0.2);
+    box-shadow: 1px 1px 5px 0.5px rgba(70, 76, 82, 0.2);
+    width: 50%;
+}
+.card-text{
+    vertical-align: middle;
+    font-size: 13px;
+}
+/* fontSize={15} fontWeight='600' color='#fff' */
+.section-description{
+    font-size: 15px;
+    font-weight: 800;
+    color: #fff;
+}
+.section-description-width{
+    width: 260px 
+}
+/* Styles for screens smaller than 480px (mobile devices) */
+@media only screen and (max-width: 480px) {
+    p{
+        margin: 20px 20px;
+    }
+   .top-image{
+    display: none;
+   }
+   .action-button-media{
+    background-color: #4fce5d;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 80px !important;
+   }
+   .action-button-text-media{
+    font-size : 22px !important;
+    font-weight:600;
+    color:#435a64;
+}
+.action-button-media p{
+    margin: 0px 0px;
+}
+.card-box{
+    width: 100%; display: block
+}
+.card-text{
+    vertical-align: middle;
+    font-size: 20px;
+}
+.section-description{
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+.section-description-width{
+    width: 260px
+}
+
+  }
+  /* Styles for screens larger than 480px (tablets) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Add your tablet-specific styles here */
+    p{
+        margin: 20px 20px;
+    }
+    .top-image{
+        display: none;
+       }
+       .action-button-media{
+        background-color: #4fce5d;
+        border-radius: 50px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        padding: 20px 80px !important;
+       }
+       .action-button-text-media{
+        font-size : 22px !important;
+        font-weight:600;
+        color:#435a64;
+    }
+    .action-button-media p{
+        margin: 0px 0px;
+    }
+    .card-box{
+        width: 100%; display: block
+    }
+    .card-text{
+        vertical-align: middle;
+        font-size: 20px;
+    }
+    .section-description{
+        font-size: 20px;
+        font-weight: 800;
+        color: #fff;
+    }
+    .section-description-width{
+        width: 380px
+    }
+  
+  }
+  
+  /* Styles for screens larger than 768px (desktops) */
+  @media only screen and (min-width: 769px) {
+    /* Add your desktop-specific styles here */
+  }
