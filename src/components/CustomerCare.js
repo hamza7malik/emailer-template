@@ -39,7 +39,7 @@ const CustomerCare = () => {
             >
               <Image
                 height='auto'
-                src='/assets/customer_care_icon1.png'
+                src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon1.png'
                 style={{ margin: '0 auto ' }}
               />{' '}
               <Span fontSize={15} fontWeight='600' color='#000'>
@@ -55,7 +55,7 @@ const CustomerCare = () => {
             >
               <Image
                 height='auto'
-                src='/assets/customer_care_icon2.png'
+                src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon2.png'
                 style={{ margin: '0 auto ' }}
               />{' '}
               <Span fontSize={15} fontWeight='600' color='#000'>
@@ -71,7 +71,7 @@ const CustomerCare = () => {
             >
               <Image
                 height='auto'
-                src='/assets/customer_care_icon3.png'
+                src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon3.png'
                 style={{ margin: '0 auto ' }}
               />{' '}
               <Span fontSize={15} fontWeight='600' color='#000'>
@@ -87,7 +87,7 @@ const CustomerCare = () => {
             >
               <Image
                 height='auto'
-                src='/assets/customer_care_icon4.png'
+                src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon4.png'
                 style={{ margin: '0 auto ' }}
               />{' '}
               <Span fontSize={15} fontWeight='600' color='#000'>

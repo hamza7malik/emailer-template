@@ -11,7 +11,7 @@ const Header = () => {
       <Item>
         <Image
           height='auto'
-          src='/assets/logo.png'
+          src='https://ik.imagekit.io/emailer1axmlgirg/logo.png'
           style={{ margin: '0 auto ' }}
           width={160}
         />
@@ -21,7 +21,7 @@ const Header = () => {
       <Item className='top-image'>
         <Image
           height='auto'
-          src='/assets/whatsapp1.png'
+          src='https://ik.imagekit.io/emailer1axmlgirg/whatsapp1.png'
           style={{
             margin: '0 auto ',
           }}

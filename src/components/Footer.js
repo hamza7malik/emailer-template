@@ -10,7 +10,7 @@ const Footer = () => {
       <VirticleSpace height={30} />
       <Image
         height='auto'
-        src={'/assets/other_icon_whatsapp.png'}
+        src={'https://ik.imagekit.io/emailer1axmlgirg/other_icon_whatsapp.png'}
         style={{ margin: 'auto 5px ', display: 'inline-block' }}
       />
       <p
@@ -28,7 +28,9 @@ const Footer = () => {
       <Item align='center' style={{ width: '60%' }}>
         <Image
           height='auto'
-          src={'/assets/other_icon_location.png'}
+          src={
+            'https://ik.imagekit.io/emailer1axmlgirg/other_icon_location.png'
+          }
           style={{ margin: '0 5px ', display: 'inline-block' }}
         />
 

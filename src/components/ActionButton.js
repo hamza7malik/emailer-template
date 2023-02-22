@@ -1,11 +1,11 @@
 import React from 'react';
-import { Item } from 'react-html-email';
+import { Item, Span } from 'react-html-email';
 
 const ActionButton = ({ text }) => {
   return (
     <Item align='center'>
       <Item className='button action-button-media'>
-        <p className='action-button-text-media'>{text}</p>
+        <Span className='action-button-text-media'>{text}</Span>
       </Item>
     </Item>
   );

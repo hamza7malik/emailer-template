@@ -43,7 +43,7 @@ const Emailer = ({ preheader }) => {
         <Item align='center'>
           <Box
             style={backgroundStyle}
-            background='/assets/whatsapp pattern3.jpg'
+            background='https://ik.imagekit.io/emailer1axmlgirg/whatsapp pattern3.jpg'
           >
             <Item>
               <Span

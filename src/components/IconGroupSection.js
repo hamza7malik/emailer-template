@@ -12,7 +12,7 @@ const IconGroupSection = () => {
         >
           <Image
             height='auto'
-            src='/assets/messaging_feature1.png'
+            src='https://ik.imagekit.io/emailer1axmlgirg/messaging_feature1.png'
             style={{ margin: '10px auto ' }}
           />
           <Span fontSize={15} fontWeight='600' color='#000'>
@@ -27,7 +27,7 @@ const IconGroupSection = () => {
         >
           <Image
             height='auto'
-            src='/assets/messaging_feature2.png'
+            src='https://ik.imagekit.io/emailer1axmlgirg/messaging_feature2.png'
             style={{ margin: '10px auto ' }}
           />{' '}
           <Span fontSize={15} fontWeight='600' color='#000'>
@@ -42,7 +42,7 @@ const IconGroupSection = () => {
         >
           <Image
             height='auto'
-            src='/assets/messaging_feature3.png'
+            src='https://ik.imagekit.io/emailer1axmlgirg/messaging_feature3.png'
             style={{ margin: '10px auto ' }}
           />{' '}
           <Span fontSize={15} fontWeight='600' color='#000'>
