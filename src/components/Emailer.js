@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Email, Item, renderEmail, Span } from 'react-html-email';
+import { Box, Email, Item, renderEmail, Span, A } from 'react-html-email';
+import { renderToStaticMarkup } from 'react-dom/server';
 
 import ActionButton from './ActionButton';
 import CustomerCare from './CustomerCare';
@@ -12,7 +13,7 @@ import SectionDescription from './SectionDescription';
 import SectionDescriptionCard from './SectionDescriptionCard';
 import VirticleSpace from './VirticleSpace';
 
-const Emailer = () => {
+const Emailer = ({ preheader }) => {
   const emailHeadCSS = `
   body {
     background-color: #F5F8FA;
@@ -34,7 +35,11 @@ const Emailer = () => {
 
   return (
     <Box align='center' style={containerStyle}>
-      <Email align='center' headCSS={emailHeadCSS} title={'subject'}>
+      <Email
+        align='center'
+        headCSS={emailHeadCSS}
+        title={'WhatsApp for Business Solutions'}
+      >
         <Item align='center'>
           <Box
             style={backgroundStyle}
@@ -42,30 +47,29 @@ const Emailer = () => {
           >
             <Item>
               <Span
-                fontSize={14}
-                color='#8C8C8C'
+                fontSize={0}
+                lineHeight={1}
                 style={{
                   display: 'none',
-                  maxWidth: '0px',
-                  maxHeight: '0px',
+                  maxWidth: 0,
+                  maxHeight: 0,
                   overflow: 'hidden',
+                  opacity: 0,
+                  visibility: 'hidden',
+                  msoHide: 'all',
                 }}
               >
-                View this email in your browser
+                {preheader}
               </Span>
-              <Span
-                fontSize={14}
-                color='#8C8C8C'
-                style={{
-                  display: 'block',
-                  maxWidth: '0px',
-                  maxHeight: '0px',
-                  overflow: 'hidden',
-                }}
+            </Item>
+            <Item align='center'>
+              <A
+                href='https://emailer-template-wisoft.netlify.app/'
+                style={{ color: 'inherit', textDecoration: 'none' }}
               >
-                Click here to view in your browser:
-                https://emailer-template-wisoft.netlify.app/
-              </Span>
+                Can't view this email? Click here to view it in your web
+                browser.
+              </A>
             </Item>
             <Header />
             <ActionButton text={' Inquire Now'} />
@@ -111,3 +115,8 @@ const Emailer = () => {
   );
 };
 export { Emailer };
+
+// Convert the React component to an HTML email string
+const emailHtml = renderToStaticMarkup(<Emailer />);
+
+console.log(emailHtml);
