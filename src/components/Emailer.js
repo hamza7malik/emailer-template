@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Email, Item } from 'react-html-email';
+import { Box, Email, Item, renderEmail, Span } from 'react-html-email';
 
 import ActionButton from './ActionButton';
 import CustomerCare from './CustomerCare';
@@ -40,6 +40,33 @@ const Emailer = () => {
             style={backgroundStyle}
             background='/assets/whatsapp pattern3.jpg'
           >
+            <Item>
+              <Span
+                fontSize={14}
+                color='#8C8C8C'
+                style={{
+                  display: 'none',
+                  maxWidth: '0px',
+                  maxHeight: '0px',
+                  overflow: 'hidden',
+                }}
+              >
+                View this email in your browser
+              </Span>
+              <Span
+                fontSize={14}
+                color='#8C8C8C'
+                style={{
+                  display: 'block',
+                  maxWidth: '0px',
+                  maxHeight: '0px',
+                  overflow: 'hidden',
+                }}
+              >
+                Click here to view in your browser:
+                https://emailer-template-wisoft.netlify.app/
+              </Span>
+            </Item>
             <Header />
             <ActionButton text={' Inquire Now'} />
             <VirticleSpace height={25} />
@@ -83,5 +110,4 @@ const Emailer = () => {
     </Box>
   );
 };
-
-export default Emailer;
+export { Emailer };
