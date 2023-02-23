@@ -20,87 +20,135 @@ const CustomerCare = () => {
     borderTopRightRadius: 15,
   };
   return (
-    <Item>
-      <Item align='center'>
-        <Box style={cardWithHeaderStyle}>
-          <tr style={{ width: '100%', textAlign: 'center' }}>
-            <td style={cardHeader} colspan='2'>
-              <Span fontSize={15} fontWeight='600' color='#fff'>
-                The Future of Customer Care With
-              </Span>
-            </td>
-          </tr>
-          <VirticleSpace height={20} />
-          <tr>
-            {/* ------Item----- */}
-            <tr
-              align='center'
-              style={{ margin: 'auto 23px', display: 'inline-block' }}
-            >
-              <Image
-                height='auto'
-                src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon1.png'
-                style={{ margin: '0 auto ' }}
-              />{' '}
-              <Span fontSize={15} fontWeight='600' color='#000'>
-                Wider <br /> Reach
-              </Span>
+    <table style={{ width: '100%' }}>
+      <tr>
+        <td style={{ width: '100%', textAlign: 'center' }} colspan='2'>
+          <table style={cardWithHeaderStyle}>
+            <tr>
+              <td style={cardHeader}>
+                <span
+                  style={{ fontSize: 15, fontWeight: '600', color: '#fff' }}
+                >
+                  The Future of Customer Care With
+                </span>
+              </td>
             </tr>
-            {/* ------Item----- */}
-
-            {/* ------Item----- */}
-            <tr
-              align='center'
-              style={{ margin: 'auto 23px', display: 'inline-block' }}
-            >
-              <Image
-                height='auto'
-                src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon2.png'
-                style={{ margin: '0 auto ' }}
-              />{' '}
-              <Span fontSize={15} fontWeight='600' color='#000'>
-                Enhanced
-                <br /> Engagement
-              </Span>
+            <tr>
+              <td style={{ height: 20 }}></td>
             </tr>
-            {/* ------Item----- */}
-            {/* ------Item----- */}
-            <tr
-              align='center'
-              style={{ margin: 'auto 23px', display: 'inline-block' }}
-            >
-              <Image
-                height='auto'
-                src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon3.png'
-                style={{ margin: '0 auto ' }}
-              />{' '}
-              <Span fontSize={15} fontWeight='600' color='#000'>
-                Evolving
-                <br /> Preferences
-              </Span>
+            <tr style={{ display: 'table', width: '100%' }}>
+              {/* ------Item----- */}
+              <td
+                align='center'
+                style={{
+                  margin: 'auto 23px',
+                  display: 'table-cell',
+                  verticalAlign: 'middle',
+                }}
+              >
+                <img
+                  height='auto'
+                  src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon1.png'
+                  style={{ margin: '0 auto ' }}
+                />
+                <span
+                  style={{
+                    fontSize: 15,
+                    fontWeight: '600',
+                    color: '#000',
+                    display: 'table',
+                  }}
+                >
+                  Wider <br /> Reach
+                </span>
+              </td>
+              {/* ------Item----- */}
+              {/* ------Item----- */}
+              <td
+                align='center'
+                style={{
+                  margin: 'auto 23px',
+                  display: 'table-cell',
+                  verticalAlign: 'middle',
+                }}
+              >
+                <img
+                  height='auto'
+                  src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon2.png'
+                  style={{ margin: '0 auto ' }}
+                />
+                <span
+                  style={{
+                    fontSize: 15,
+                    fontWeight: '600',
+                    color: '#000',
+                    display: 'table',
+                  }}
+                >
+                  Enhanced <br /> Engagement
+                </span>
+              </td>
+              {/* ------Item----- */}
+              {/* ------Item----- */}
+              <td
+                align='center'
+                style={{
+                  margin: 'auto 23px',
+                  display: 'table-cell',
+                  verticalAlign: 'middle',
+                }}
+              >
+                <img
+                  height='auto'
+                  src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon3.png'
+                  style={{ margin: '0 auto ' }}
+                />
+                <span
+                  style={{
+                    fontSize: 15,
+                    fontWeight: '600',
+                    color: '#000',
+                    display: 'table',
+                  }}
+                >
+                  Evolving <br /> Preferences
+                </span>
+              </td>
+              {/* ------Item----- */}
+              {/* ------Item----- */}
+              <td
+                align='center'
+                style={{
+                  margin: 'auto 23px',
+                  display: 'table-cell',
+                  verticalAlign: 'middle',
+                }}
+              >
+                <img
+                  height='auto'
+                  src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon4.png'
+                  style={{ margin: '0 auto ' }}
+                />
+                <span
+                  style={{
+                    fontSize: 15,
+                    fontWeight: '600',
+                    color: '#000',
+                    display: 'table',
+                  }}
+                >
+                  Social Media <br /> Connection
+                </span>
+              </td>
+              {/* ------Item----- */}
             </tr>
-            {/* ------Item----- */}
-            {/* ------Item----- */}
-            <tr
-              align='center'
-              style={{ margin: 'auto 23px', display: 'inline-block' }}
-            >
-              <Image
-                height='auto'
-                src='https://ik.imagekit.io/emailer1axmlgirg/customer_care_icon4.png'
-                style={{ margin: '0 auto ' }}
-              />{' '}
-              <Span fontSize={15} fontWeight='600' color='#000'>
-                Social Media <br />
-                Connection
-              </Span>
+            <tr>
+              <td style={{ height: 20 }}></td>
             </tr>
-            {/* ------Item----- */}
-          </tr>
-          <VirticleSpace height={20} />
-        </Box>
-      </Item>
-    </Item>
+          </table>
+        </td>
+      </tr>
+    </table>
   );
 };
 

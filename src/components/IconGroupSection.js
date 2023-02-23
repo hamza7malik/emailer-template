@@ -3,55 +3,79 @@ import { Item, Image, Span } from 'react-html-email';
 
 const IconGroupSection = () => {
   return (
-    <Item align='center'>
+    <table align='center'>
       <tr>
         {/* ------Item----- */}
-        <tr
+        <td
           align='center'
           style={{ margin: 'auto 23px', display: 'inline-block' }}
         >
-          <Image
-            height='auto'
-            src='https://ik.imagekit.io/emailer1axmlgirg/messaging_feature1.png'
-            style={{ margin: '10px auto ' }}
-          />
-          <Span fontSize={15} fontWeight='600' color='#000'>
-            AUTOREPLY
-          </Span>
-        </tr>
+          <table>
+            <tr>
+              <td>
+                <img
+                  src='https://ik.imagekit.io/emailer1axmlgirg/messaging_feature1.png'
+                  style={{ margin: '10px auto ', height: 'auto' }}
+                  height='auto'
+                />
+              </td>
+            </tr>
+            <tr align='center'>
+              <td style={{ fontSize: 15, fontWeight: 600, color: '#000' }}>
+                AUTOREPLY
+              </td>
+            </tr>
+          </table>
+        </td>
         {/* ------Item----- */}
         {/* ------Item----- */}
-        <tr
+        <td
           align='center'
           style={{ margin: 'auto 23px', display: 'inline-block' }}
         >
-          <Image
-            height='auto'
-            src='https://ik.imagekit.io/emailer1axmlgirg/messaging_feature2.png'
-            style={{ margin: '10px auto ' }}
-          />{' '}
-          <Span fontSize={15} fontWeight='600' color='#000'>
-            CHAT-BOT
-          </Span>
-        </tr>
+          <table>
+            <tr>
+              <td>
+                <img
+                  src='https://ik.imagekit.io/emailer1axmlgirg/messaging_feature2.png'
+                  style={{ margin: '10px auto ', height: 'auto' }}
+                  height='auto'
+                />
+              </td>
+            </tr>
+            <tr align='center'>
+              <td style={{ fontSize: 15, fontWeight: 600, color: '#000' }}>
+                CHAT-BOT
+              </td>
+            </tr>
+          </table>
+        </td>
         {/* ------Item----- */}
         {/* ------Item----- */}
-        <tr
+        <td
           align='center'
           style={{ margin: 'auto 23px', display: 'inline-block' }}
         >
-          <Image
-            height='auto'
-            src='https://ik.imagekit.io/emailer1axmlgirg/messaging_feature3.png'
-            style={{ margin: '10px auto ' }}
-          />{' '}
-          <Span fontSize={15} fontWeight='600' color='#000'>
-            LIVE CHAT
-          </Span>
-        </tr>
+          <table>
+            <tr>
+              <td>
+                <img
+                  src='https://ik.imagekit.io/emailer1axmlgirg/messaging_feature3.png'
+                  style={{ margin: '10px auto ', height: 'auto' }}
+                  height='auto'
+                />
+              </td>
+            </tr>
+            <tr align='center'>
+              <td style={{ fontSize: 15, fontWeight: 600, color: '#000' }}>
+                LIVE CHAT
+              </td>
+            </tr>
+          </table>
+        </td>
         {/* ------Item----- */}
       </tr>
-    </Item>
+    </table>
   );
 };
 

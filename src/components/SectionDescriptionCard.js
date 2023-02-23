@@ -9,17 +9,28 @@ const SectionDescriptionCard = ({ Message }) => {
     backgroundColor: '#606060',
   };
   return (
-    <Item align='center'>
-      <td style={cardStyle}>
-        <VirticleSpace height={'6px'} />
-        <Item align='center' style={{ width: '260px' }}>
-          <Span fontSize={15} fontWeight='600' color='#fff'>
-            {Message}
-          </Span>
-        </Item>
-        <VirticleSpace height={'6px'} />
-      </td>
-    </Item>
+    <table align='center'>
+      <tr>
+        <td style={cardStyle}>
+          <table align='center' style={{ width: '260px' }}>
+            <tr>
+              <td style={{ padding: '6px' }}>
+                <p
+                  style={{
+                    fontSize: '15px',
+                    fontWeight: '600',
+                    color: '#fff',
+                    textAlign: 'center',
+                  }}
+                >
+                  {Message}
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   );
 };
 

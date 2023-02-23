@@ -1,6 +1,10 @@
 import React from 'react';
 import { Box, Email, Item, renderEmail, Span, A } from 'react-html-email';
 import { renderToStaticMarkup } from 'react-dom/server';
+import css from '../App.module.css';
+// import inlineCss from 'inline-css';
+import juice from 'juice';
+import cheerio from 'cheerio';
 
 import ActionButton from './ActionButton';
 import CustomerCare from './CustomerCare';
@@ -72,44 +76,64 @@ const Emailer = ({ preheader }) => {
               </A>
             </Item>
             <Header />
-            <ActionButton text={' Inquire Now'} />
+            <Item align='center'>
+              <ActionButton text={' Inquire Now'} />
+            </Item>
             <VirticleSpace height={25} />
-            <CustomerCare />
+            <Item>
+              <CustomerCare />
+            </Item>
             <VirticleSpace height={25} />
-            <SectionDescription
-              Message={'UNMATCHED FEATURES'}
-              textColor={'#435a64'}
-            />
+            <Item align='center'>
+              <SectionDescription
+                Message={'UNMATCHED FEATURES'}
+                textColor={'#435a64'}
+              />
+            </Item>
             <VirticleSpace height={25} />
-            <LongIconCards />
+            <Item align='center'>
+              <LongIconCards />
+            </Item>
             <VirticleSpace height={25} />
-            <SectionDescription
-              Message={'MULTIPLE MESSAGING FORMATS TO CONVERSE WITH USERS'}
-              textColor={'#435a64'}
-            />
+            <Item align='center'>
+              <SectionDescription
+                Message={'MULTIPLE MESSAGING FORMATS TO CONVERSE WITH USERS'}
+                textColor={'#435a64'}
+              />
+            </Item>
             <VirticleSpace height={25} />
-            <IconGroupSection />
+            <Item align='center'>
+              <IconGroupSection />
+            </Item>
             <VirticleSpace height={50} />
-            <SectionDescriptionCard
-              Message={'ONE-STOP SOLUTION FOR ALL COMUNICATION:'}
-            />
+            <Item align='center'>
+              <SectionDescriptionCard
+                Message={'ONE-STOP SOLUTION FOR ALL COMUNICATION:'}
+              />
+            </Item>
             <VirticleSpace height={50} />
-            <LongIcons />
+            <Item align='center'>
+              <LongIcons />
+            </Item>
             <VirticleSpace height={25} />
-            <SectionDescription
-              Message={
-                "Don't miss out! Connect with Wisoft Solutions to Onboard Your business WhatsApp!"
-              }
-              widthFull={true}
-              textColor={'#435a64'}
-            />
+            <Item align='center'>
+              <SectionDescription
+                Message={
+                  "Don't miss out! Connect with Wisoft Solutions to Onboard Your business WhatsApp!"
+                }
+                widthFull={true}
+                textColor={'#435a64'}
+              />
+            </Item>
             <VirticleSpace height={3} />
             <Item align='center' style={{ transform: ' translateY(13px)' }}>
               <ActionButton text={' Inquire Now'} />
             </Item>
           </Box>
         </Item>
-        <Footer />
+        <Item align='center'>
+          <Footer />
+        </Item>
       </Email>
     </Box>
   );
@@ -118,5 +142,18 @@ export { Emailer };
 
 // Convert the React component to an HTML email string
 const emailHtml = renderToStaticMarkup(<Emailer />);
+// const css = fs.readFileSync('../App.css', 'utf8');
+const inlinedHtml = juice(emailHtml, css);
+const $ = cheerio.load(inlinedHtml);
+$('table').attr({
+  align: 'center',
+  style: 'background-color:#FFF;',
+  cellpadding: '0',
+  cellspacing: '0',
+  border: '0',
+  valign: 'top',
+});
 
-console.log(emailHtml);
+const fixedHtml = $.html();
+console.log(fixedHtml);
+console.log(css);
